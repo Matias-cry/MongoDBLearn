@@ -1,0 +1,56 @@
+use ("dbClothingStore")
+// inserción de datos a la colección "clientes"
+db.clientes.insertMany([
+    {
+    _id: "C001",
+    Nombre: "Juan",
+    Apellido: "Pérez",
+    FechaNacimiento: "15/05/1990",
+    Email: "juan.perez@gmail.com",
+    CategoriasInteres: [
+        "Ropa Formal", "Camisas", "Hombres"
+    ]
+    },
+    {
+    _id: "C002",
+    Nombre: "Ana",
+    Apellido: "Gómez",
+    FechaNacimiento: '',
+    Email: "ana.gomez@outlook.com",
+    CategoriasInteres: [
+        "Ropa Casual", "Vestidos", "Mujeres", "Accesorios"
+    ]
+    },
+    {
+    _id: "C003",
+    Nombre: "Luis",
+    Apellido: "Martínez",
+    FechaNacimiento: "30/11/1988",
+    Email: '',
+    CategoriasInteres: [
+        ''
+    ]
+    },
+    {
+    _id: "C004",
+    Nombre: "María",
+    Apellido: "López",
+    FechaNacimiento: "17/02/1988",
+    Email: "maria.lopez@yahoo.com",
+    CategoriasInteres: [
+        "Ropa de Invierno", "Chompas"
+    ]
+    },
+    {
+    _id: "C005",
+    Nombre: "Sofía",
+    Apellido: "Ramírez",
+    FechaNacimiento: "25/09/1993",
+    Email: "sofia.ramirez@outlook.com",
+    CategoriasInteres: [
+        "Ropa Casual", "Accesorios", "Mujeres"
+    ]
+    }
+])
+
+db.clientes.find()

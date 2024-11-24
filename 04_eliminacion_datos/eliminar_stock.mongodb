@@ -1,0 +1,7 @@
+use ("dbClothingStore")
+// eliminar prendas cuyas cantidades sean menores a 30
+db.prendas.deleteMany(
+    {
+        Stock: { $lt: 30 }
+    }
+);

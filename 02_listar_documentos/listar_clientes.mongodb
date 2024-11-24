@@ -1,0 +1,3 @@
+use ("dbClothingStore")
+// listar los primeros 2 documentos de clientes
+db.clientes.find().limit(2)

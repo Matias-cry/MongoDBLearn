@@ -1,0 +1,16 @@
+use ("dbClothingStore")
+// actualizar el precio de la casaca de cuero de 299 a 799
+db.prendas.updateOne(
+    {
+      _id: ObjectId("674309451e7fb91906c763eb")
+    },
+    {
+        $set: {PrecioUnitario: 799.99}
+    }
+)
+
+db.prendas.find(
+  {
+    _id: ObjectId("674309451e7fb91906c763eb")
+  }
+)

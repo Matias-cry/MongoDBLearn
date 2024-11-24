@@ -1,0 +1,7 @@
+use ("dbClothingStore")
+// listar prendas cuyo stock sea igual o mayor a 50
+db.prendas.find(
+    {
+        Stock: { $gte: 50 }
+    }
+);

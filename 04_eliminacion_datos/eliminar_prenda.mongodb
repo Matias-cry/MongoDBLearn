@@ -1,0 +1,8 @@
+use ("dbClothingStore")
+// eliminar prenda por ID
+db.prendas.deleteOne(
+    {
+        _id: ObjectId("674309451e7fb91906c763e9")
+    }
+);
+

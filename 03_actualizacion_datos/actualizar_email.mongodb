@@ -1,0 +1,16 @@
+use ("dbClothingStore")
+// actualizar email de Juan por juan.pe@yahoo.com
+db.clientes.updateOne(
+    {
+      _id: "C001"
+    },
+    {
+        $set: {Email: "juan.pe@yahoo.com"}
+    }
+)
+
+db.clientes.find(
+  {
+    _id: "C001"
+  }
+)

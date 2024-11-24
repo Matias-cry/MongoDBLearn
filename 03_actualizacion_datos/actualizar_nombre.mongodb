@@ -1,0 +1,16 @@
+use ("dbClothingStore")
+// actualizar el nombre del Vestido de Verano por Vestido Elegante
+db.prendas.updateOne(
+    {
+      _id: ObjectId("674309451e7fb91906c763e9")
+    },
+    {
+        $set: {Nombre: "Vestido Elegante"}
+    }
+)
+
+db.prendas.find(
+  {
+    _id: ObjectId("674309451e7fb91906c763e9")
+  }
+)

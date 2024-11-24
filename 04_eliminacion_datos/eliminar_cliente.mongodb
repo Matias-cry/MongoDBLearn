@@ -1,0 +1,7 @@
+use ("dbClothingStore")
+// eliminar los datos de Maria Lopez
+db.clientes.deleteOne(
+    {
+        _id: "C004" 
+    }
+);

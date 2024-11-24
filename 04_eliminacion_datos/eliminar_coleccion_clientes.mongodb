@@ -1,0 +1,4 @@
+use ("dbClothingStore")
+// eliminar la coleccion clientes
+db.clientes.drop();
+

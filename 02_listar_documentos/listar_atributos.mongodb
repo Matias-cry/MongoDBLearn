@@ -1,0 +1,8 @@
+use ("dbClothingStore")
+// listar solamente los atributos: Nombre, Apellidos, Email y CategoriasInteres
+db.clientes.find(
+    {},
+    {
+        Nombre: 1, Apellido: 1, Email: 1, CategoriasInteres: 1, _id: 0
+    }
+);

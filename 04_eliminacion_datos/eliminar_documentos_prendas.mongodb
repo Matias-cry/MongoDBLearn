@@ -1,0 +1,3 @@
+use ("dbClothingStore")
+// eliminar todos los documentos de prendas
+db.prendas.deleteMany({});

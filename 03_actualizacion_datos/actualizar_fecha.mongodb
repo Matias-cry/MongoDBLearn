@@ -1,0 +1,16 @@
+use ("dbClothingStore")
+// actualizar la fecha de nacimiento de Ana al 06/06/2006
+db.clientes.updateOne(
+    {
+      _id: "C002"
+    },
+    {
+        $set: {FechaNacimiento: "06/06/2006"}
+    }
+)
+
+db.clientes.find(
+  {
+    _id: "C002"
+  }
+)

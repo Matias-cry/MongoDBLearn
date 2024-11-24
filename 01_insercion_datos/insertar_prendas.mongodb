@@ -1,0 +1,54 @@
+use ("dbClothingStore")
+// inserción de datos a la colección "prendas"
+db.prendas.insertOne({
+    Nombre: "Camisa Formal",
+    Marca: "H&M",
+    Categorias: [
+        "Ropa formal", "Camisas", "Hombres"
+    ],
+    Stock: 50,
+    PrecioUnitario: 35.50
+})
+
+db.prendas.insertOne({
+    Nombre: "Pantalones Jeans",
+    Marca: "Levi's",
+    Categorias: [
+        "Ropa casual" , "Pantalones", "Unisex"
+    ],
+    Stock: 100,
+    PrecioUnitario: 45.00
+})
+
+db.prendas.insertOne({
+    Nombre: "Vestido de Verano",
+    Marca: "Zara",
+    Categorias: [
+        "Ropa Casual", "Vestidos", "Mujeres"
+    ],
+    Stock: 30,
+    PrecioUnitario: 29.99
+})
+
+db.prendas.insertOne({
+    Nombre: "Chompa de Lana",
+    Marca: "Uniqlo",
+    Categorias: [
+        "Ropa de Invierno", "Chompas", "Unisex", "Mujeres"
+    ],
+    Stock: 75,
+    PrecioUnitario: 89.99
+})
+
+db.prendas.insertOne({
+    Nombre: "Casaca de Cuero",
+    Marca: "Gucci",
+    Categorias: [
+        "Ropa de Invierno", "Unisex"
+    ],
+    Stock: 20,
+    PrecioUnitario: 299.99
+})
+
+db.prendas.find()
+
